@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:elevation="4dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    tools:ignore="UnusedAttribute">
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+       <ImageView
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:src="@mipmap/al_furqan"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Al-Furqan"
+           android:textSize="20sp"
+           android:textColor="#fff"
+           android:layout_marginTop="7dp"
+           android:layout_marginLeft="10dp"/>
+       <SearchView
+           android:layout_width="220dp"
+           android:layout_height="wrap_content"
+           android:id="@+id/svQuran"
+           android:queryHint="Search Surat"
+           android:iconifiedByDefault="false">
+       </SearchView>
+
+   </LinearLayout>
+
+</android.support.v7.widget.Toolbar>
